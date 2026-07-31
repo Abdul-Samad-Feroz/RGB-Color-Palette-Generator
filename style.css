@@ -1,10 +1,22 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+body {
+  margin: 0px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
-p{
-    color: black;
-    font-size: larger;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+p {
+  color: black;
+  font-size: larger;
 }
