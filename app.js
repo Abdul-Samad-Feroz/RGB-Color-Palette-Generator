@@ -35,3 +35,5 @@ copyButton.addEventListener("click", function () {
   navigator.clipboard.writeText(colors.join("\n"));
   alert("Palette copied!");
 });
+
+ AOS.init();
