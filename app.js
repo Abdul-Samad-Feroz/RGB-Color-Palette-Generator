@@ -5,7 +5,7 @@ function randomColor() {
   return `RGB(${val1}, ${val2}, ${val3})`;
 }
 
-let button = document.getElementById("generate");
+let button = document.querySelector(".generate");
 
 button.addEventListener("click", function () {
   for (let i = 1; i < 6; i++) {
@@ -24,7 +24,7 @@ for (let box of boxes) {
     alert("Copied!");
   });
 }
-let copyButton = document.getElementById("copy");
+let copyButton = document.querySelector(".copy");
 copyButton.addEventListener("click", function () {
   let colors = [];
 
@@ -36,4 +36,4 @@ copyButton.addEventListener("click", function () {
   alert("Palette copied!");
 });
 
- AOS.init();
+AOS.init();

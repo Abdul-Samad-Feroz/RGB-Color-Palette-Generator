@@ -109,12 +109,27 @@ button {
   border: none;
 }
 
-#generate {
+.generate:active {
+  transform: translateY(1px);
+}
+.copy:active {
+  transform: translateY(1px);
+}
+.generate:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+.copy:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+.generate {
   background: #3b82f6;
   color: #ffffff;
 }
 
-#copy {
+.copy {
   background: #334155;
   color: #ffffff;
 }
