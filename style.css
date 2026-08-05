@@ -7,7 +7,6 @@
 }
 
 body {
-  margin: 0px;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   min-height: 100vh;
   display: flex;
@@ -16,7 +15,6 @@ body {
   align-items: center;
   padding: 20px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 h1 {
   color: #ffffff;
@@ -27,7 +25,7 @@ h1 {
 }
 
 .description {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #94a3b8;
@@ -97,7 +95,7 @@ h1 {
 }
 
 button {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
   border-radius: 12px;
@@ -109,16 +107,11 @@ button {
   border: none;
 }
 
-.generate:active {
-  transform: translateY(1px);
-}
+.generate:active,
 .copy:active {
   transform: translateY(1px);
 }
-.generate:focus-visible {
-  outline: 2px solid #60a5fa;
-  outline-offset: 3px;
-}
+.generate:focus-visible,
 .copy:focus-visible {
   outline: 2px solid #60a5fa;
   outline-offset: 3px;
