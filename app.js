@@ -20,6 +20,10 @@ let boxes = document.querySelectorAll(".box");
 
 for (let box of boxes) {
   box.addEventListener("click", function () {
+    if (box.style.backgroundColor === "") {
+      alert("Generate colors first!");
+      return;
+    }
     navigator.clipboard.writeText(box.style.backgroundColor);
     alert("Copied!");
   });
@@ -27,13 +31,14 @@ for (let box of boxes) {
 let copyButton = document.querySelector(".copy");
 copyButton.addEventListener("click", function () {
   let colors = [];
-
   for (let i = 1; i < 6; i++) {
     let color = document.getElementById("code" + i).innerText;
     colors.push(color);
   }
+  if (colors[0] === "") {
+    alert("Generate colors first!");
+    return;
+  }
   navigator.clipboard.writeText(colors.join("\n"));
   alert("Palette copied!");
 });
-
-AOS.init();
