@@ -8,8 +8,8 @@ A modern and responsive **Color Palette Generator** built with **HTML, CSS, and 
 
 ## 📸 Preview
 
-*<img width="1537" height="850" alt="Capture" src="https://github.com/user-attachments/assets/97449cbf-5e56-4a41-99c9-8d88a2b9f151" />
-*
+<img width="1537" height="850" alt="Capture" src="https://github.com/user-attachments/assets/97449cbf-5e56-4a41-99c9-8d88a2b9f151" />
+
 
 ---
 
