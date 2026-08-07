@@ -21,11 +21,19 @@ let boxes = document.querySelectorAll(".box");
 for (let box of boxes) {
   box.addEventListener("click", function () {
     if (box.style.backgroundColor === "") {
-      alert("Generate colors first!");
+      Swal.fire({
+        title: "No Colors Found!",
+        text: "Generate a color palette first",
+        icon: "error",
+      });
       return;
     }
     navigator.clipboard.writeText(box.style.backgroundColor);
-    alert("Copied!");
+    Swal.fire({
+      title: "Copied!",
+      text: "RGB color copied to clipboard",
+      icon: "success",
+    });
   });
 }
 let copyButton = document.querySelector(".copy");
@@ -36,9 +44,17 @@ copyButton.addEventListener("click", function () {
     colors.push(color);
   }
   if (colors[0] === "") {
-    alert("Generate colors first!");
+    Swal.fire({
+      title: "No Colors Found!",
+      text: "Generate a color palette first",
+      icon: "error",
+    });
     return;
   }
   navigator.clipboard.writeText(colors.join("\n"));
-  alert("Palette copied!");
+  Swal.fire({
+    title: "Copied!",
+    text: "Color palette copied to clipboard",
+    icon: "success",
+  });
 });
